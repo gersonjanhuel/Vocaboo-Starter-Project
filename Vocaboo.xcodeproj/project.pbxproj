@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		7C34579526B826C500514F00 /* VocabooApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34579426B826C500514F00 /* VocabooApp.swift */; };
-		7C34579726B826C500514F00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34579626B826C500514F00 /* ContentView.swift */; };
 		7C34579926B826C700514F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C34579826B826C700514F00 /* Assets.xcassets */; };
 		7C34579C26B826C700514F00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C34579B26B826C700514F00 /* Preview Assets.xcassets */; };
+		7C3457A626B8274400514F00 /* MyVocabulariesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3457A426B8274400514F00 /* MyVocabulariesView.swift */; };
+		7C3457A726B8274400514F00 /* TrendingVocabulariesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3457A526B8274400514F00 /* TrendingVocabulariesView.swift */; };
+		7C3457AA26B8279700514F00 /* TrendingVocab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3457A926B8279700514F00 /* TrendingVocab.swift */; };
+		7C3457AD26B8279F00514F00 /* TrendingVocabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3457AC26B8279F00514F00 /* TrendingVocabViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7C34579126B826C500514F00 /* Vocaboo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocaboo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C34579426B826C500514F00 /* VocabooApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabooApp.swift; sourceTree = "<group>"; };
-		7C34579626B826C500514F00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7C34579826B826C700514F00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C34579B26B826C700514F00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C34579D26B826C700514F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C3457A426B8274400514F00 /* MyVocabulariesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyVocabulariesView.swift; sourceTree = "<group>"; };
+		7C3457A526B8274400514F00 /* TrendingVocabulariesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingVocabulariesView.swift; sourceTree = "<group>"; };
+		7C3457A926B8279700514F00 /* TrendingVocab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingVocab.swift; sourceTree = "<group>"; };
+		7C3457AC26B8279F00514F00 /* TrendingVocabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingVocabViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				7C34579426B826C500514F00 /* VocabooApp.swift */,
-				7C34579626B826C500514F00 /* ContentView.swift */,
+				7C3457AB26B8279F00514F00 /* ViewModels */,
+				7C3457A826B8279700514F00 /* Models */,
+				7C3457A326B8274400514F00 /* Views */,
 				7C34579826B826C700514F00 /* Assets.xcassets */,
 				7C34579D26B826C700514F00 /* Info.plist */,
 				7C34579A26B826C700514F00 /* Preview Content */,
@@ -67,6 +75,31 @@
 				7C34579B26B826C700514F00 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7C3457A326B8274400514F00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C3457A526B8274400514F00 /* TrendingVocabulariesView.swift */,
+				7C3457A426B8274400514F00 /* MyVocabulariesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7C3457A826B8279700514F00 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C3457A926B8279700514F00 /* TrendingVocab.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7C3457AB26B8279F00514F00 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7C3457AC26B8279F00514F00 /* TrendingVocabViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C34579726B826C500514F00 /* ContentView.swift in Sources */,
+				7C3457AD26B8279F00514F00 /* TrendingVocabViewModel.swift in Sources */,
+				7C3457AA26B8279700514F00 /* TrendingVocab.swift in Sources */,
 				7C34579526B826C500514F00 /* VocabooApp.swift in Sources */,
+				7C3457A626B8274400514F00 /* MyVocabulariesView.swift in Sources */,
+				7C3457A726B8274400514F00 /* TrendingVocabulariesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
