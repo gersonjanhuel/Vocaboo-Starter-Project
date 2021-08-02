@@ -10,6 +10,7 @@ import CoreData
 
 struct MyVocabulariesView: View {
     
+    // dummy data...
     @State var myVocabularies: [String] = ["Vocab 1", "Vocab 2", "Vocab 3"]
     
     var body: some View {
@@ -19,9 +20,7 @@ struct MyVocabulariesView: View {
             }
             .onDelete(perform: { indexSet in
                 myVocabularies.remove(atOffsets: indexSet)
-                
             })
-            
         }
         .listStyle(PlainListStyle())
         .navigationTitle("My Vocabularies")
